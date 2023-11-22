@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="MAUISplashSample.MainPage">
+
+    <StackLayout VerticalOptions="FillAndExpand" >
+        <StackLayout.Background>
+        <!-- StartPoint defaults to (0,0) -->    
+        <LinearGradientBrush>
+            <GradientStop Color="#DFF6F7"
+                          Offset="0.1" />
+            <GradientStop Color="#EAF0FD"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </StackLayout.Background>
+
+        <StackLayout x:Name="MainStack" VerticalOptions="CenterAndExpand" Spacing="-35" Margin="0,-70,0,0"
+               HorizontalOptions="CenterAndExpand">
+            <Image Source="applogo" HeightRequest="200" WidthRequest="200"/>
+            <Label Text="eeva" FontSize="60" HorizontalTextAlignment="Center" TextColor="#000B5D" FontFamily="PoppinsRegular" />
+        </StackLayout>
+        
+    </StackLayout>
+</ContentPage>
+
